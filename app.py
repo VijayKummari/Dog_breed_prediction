@@ -59,7 +59,7 @@ import uuid  # For generating unique image filenames
 
 app = Flask(__name__)
 # Folder to save captured images
-app.config['UPLOAD_FOLDER'] = 'static/images/Captured_dog_imgs'
+app.config['UPLOAD_FOLDER'] = 'Dog_breed_prediction/static/images/Captured_dog_imgs'
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
 
